@@ -1,0 +1,32 @@
+{
+  "Employee": [
+    {
+      "name": "ABHINAV",
+      "designation": "SW2",
+      "department": "PASSPORT3",
+      "Gender": "MALE",
+      "id": 1
+    },
+    {
+      "name": "RUSHI",
+      "designation": "SW1",
+      "department": "RDP",
+      "Gender": "MALE",
+      "id": 2
+    },
+    {
+      "name": "ADITYA",
+      "designation": "SW3",
+      "department": "RDP",
+      "Gender": "MALE",
+      "id": 3
+    },
+    {
+      "name": "KAVITA",
+      "designation": "TESTING1",
+      "department": "DEVOP",
+      "Gender": "FEMALE",
+      "id": 4
+    }
+  ]
+}

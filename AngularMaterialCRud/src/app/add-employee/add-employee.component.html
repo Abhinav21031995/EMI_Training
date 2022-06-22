@@ -1,0 +1,42 @@
+<div class="example-container mat-elevation-z8">
+    <div class="example-loading-shade"
+         *ngIf="isDataLoading">
+      <mat-spinner *ngIf="isDataLoading"></mat-spinner>
+    </div>
+    <div class="button-row">
+        <a mat-flat-button color="primary" [routerLink]="['/list']"><mat-icon>list</mat-icon></a>
+    </div>
+ <mat-card class="example-card">
+    <form [formGroup]="empForm" (ngSubmit)="OnFormSubmit(empForm.value)">
+      <mat-form-field class="example-full-width">
+         <input matInput placeholder="Employee Name" formControlName="name">
+         <mat-error>
+            <span *ngIf="!empForm.get('name').valid && empForm.get('name').touched">Please Enter Name</span>
+         </mat-error>
+
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+         <input matInput placeholder="Employee Designation" formControlName="designation">
+         <mat-error>
+            <span *ngIf="!empForm.get('designation').valid && empForm.get('designation').touched">Please Enter Designation</span>
+         </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+         <input matInput placeholder="Employee Dept" formControlName="department" >
+         <mat-error>
+            <span *ngIf="!empForm.get('department').valid && empForm.get('department').touched">Please Enter Dept</span>
+         </mat-error>
+
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+         <input matInput placeholder="Gender" formControlName="Gender">
+         <mat-error>
+            <span *ngIf="!empForm.get('Gender').valid && empForm.get('Gender').touched">Please Enter Gender</span>
+         </mat-error>
+      </mat-form-field>
+<div class="button-row">
+   <button mat-flat-button color="primary" type="submit" [disabled]="!empForm.valid"><mat-icon>save</mat-icon></button>
+</div>
+        
+    </form>
+ </mat-card>

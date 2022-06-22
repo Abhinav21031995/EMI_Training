@@ -1,0 +1,38 @@
+<div *ngIf="showData">
+<h2 style="color: darkblue;">Employee Component</h2>
+<p style="font-weight: 800;">Built in Pipe</p>
+Currency:{{56789|currency:'Rs.'}} <br/>
+Percentage:{{0.566789|percent}}
+Slice:{{months|slice :2:6}}<br/>
+Date Pipe:{{todaydate|date:'d/M/y'}}<br/>
+jsonValue:{{jsonvalue|json}}
+
+<h4 style="color:blueviolet">Employee Details</h4>
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th>EmpId</th>
+      <th>EmpName</th>
+      <th>Location</th>
+      <th>Gender</th>
+      <th>IsEmployeed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of details">
+      <td>{{emp.id}}</td>
+      <td>{{emp.name|uppercase|assignInitial:emp.gender}}</td>
+      <td>{{emp.location|titlecase}}</td>
+      <td>{{emp.gender}}</td>
+      <td>{{emp.isActive?'Yes':'No'}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<button type="button" (click)="getQueryParamData()">Fetch Data</button>
+<button (click)="toggle()">{{buttonName}}</button>
+EmployeeID:{{ID}}
+Name:{{name}}
+Location:{{location}}
+
+

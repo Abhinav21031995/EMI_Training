@@ -1,0 +1,17 @@
+<h2 style="color: darkmagenta;"> SwitchComponent </h2>
+
+<p>Select employee Name </p>
+<select [(ngModel)]="emp">
+    <option *ngFor="let employee of employees" [ngValue]="employee">{{employee.name}}
+        <!-- <option [ngValue]="employee">{{employee.name}}</option> -->
+   </option>
+</select>
+
+
+<div [ngSwitch]="emp.id">
+    <p *ngSwitchCase="'1'">{{emp.id}} {{emp.name}} {{emp.location}}</p>
+    <p *ngSwitchCase="'2'">{{emp.id}} {{emp.name}} {{emp.location}}</p>
+    <p *ngSwitchCase="'3'">{{emp.id}} {{emp.name}} {{emp.location}}</p>
+    <p *ngSwitchCase="'4'">{{emp.id}} {{emp.name}} {{emp.location}}</p>
+    <p *ngSwitchDefault="">Please Select Employee Name</p>
+    </div>

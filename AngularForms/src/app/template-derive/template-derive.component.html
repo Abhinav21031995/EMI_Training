@@ -1,0 +1,81 @@
+<form #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+  <div class="form-group">
+    <label>Name</label>
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      [(ngModel)]="model.name"
+      #name="ngModel"
+      [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }"
+      required
+    />
+
+    <div class="invalid-feedback" *ngIf="userForm.submitted && name.invalid">
+      <p *ngIf="name.errors.required">Name is required</p>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input
+      type="email"
+      class="form-control"
+      name="email"
+      [(ngModel)]="model.email"
+      #email="ngModel"
+      [ngClass]="{ 'is-invalid': userForm.submitted && email.invalid }"
+      email
+      required
+    />
+    <div *ngIf="userForm.submitted && email.invalid" class="invalid-feedback">
+      <div *ngIf="email.errors.required">Email is required</div>
+      <div *ngIf="email.errors.email">Must be a valid email address</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Gender</label> &nbsp;
+    <input type="radio" value="male" name="gender" [(ngModel)]="model.Gender" />
+    Male
+    <input
+      type="radio"
+      value="female"
+      name="gender"
+      [(ngModel)]="model.Gender"
+    />
+    Female
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      [(ngModel)]="model.password"
+      #password="ngModel"
+      [ngClass]="{ 'is-invalid': userForm.submitted && password.invalid }"
+      minlength="8"
+      required
+    />
+    <div
+      *ngIf="userForm.submitted && password.invalid"
+      class="invalid-feedback"
+    >
+      <div *ngIf="password.errors.required">Password is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Skills</label>
+    <select class="form-control" name="skills" [(ngModel)]="model.skills">
+      <option value="">Select an option</option>
+      <option *ngFor="let skills of Skill" [value]="skills">
+        {{ skills }}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary btn-block">Submit</button>
+  </div>
+</form>

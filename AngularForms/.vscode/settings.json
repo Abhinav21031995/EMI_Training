@@ -1,0 +1,13 @@
+{
+    "editor.formatOnType": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "editor.formatOnPaste": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "cSpell.words": [
+        "Validitors",
+        "atleast",
+        "minlength"
+    ]
+}

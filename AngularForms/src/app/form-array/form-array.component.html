@@ -1,0 +1,65 @@
+<p>form-array works!</p>
+<div class="container">
+  <div class="card-body">
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Trainer</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="EmployeeName"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            (formGroup.controls.EmployeeName.touched || submitted) &&
+            formGroup.controls.EmployeeName.errors?.required
+          "
+        >
+          Name is required</span
+        >
+      </div>
+      <div class="form-group">
+        <label>Location</label>
+        <input type="text" class="form-control" formControlName="Location" />
+        <span
+          class="text-danger"
+          *ngIf="
+            (this.formGroup.controls.Location.touched || submitted) &&
+            formGroup.controls.Location.errors?.required
+          "
+        >
+          Location is required</span
+        >
+      </div>
+      Training Conducted:
+      <div formArrayName="TrainingConducted">
+        <div *ngFor="let skills of Details.controls; let i = index">
+          <div [formGroupName]="i">
+            {{ i }}
+            <label>Technology</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="technology"
+            />
+            <label>Experience:</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="experience"
+            />
+            <button type="button" (click)="removeTrainingDetails()">
+              Remove Details
+            </button>
+          </div>
+        </div>
+      </div>
+      <p>
+        <button type="button" (click)="AddSkill()">Add Training Details</button>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+    {{ this.formGroup.value | json }}
+  </div>
+</div>

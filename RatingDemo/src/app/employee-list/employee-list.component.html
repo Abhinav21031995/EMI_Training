@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table class="table" *ngIf="employee.length">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emp of employee;">
+                <th scope="row">{{emp.id}}</th>
+                <td>{{emp.name}}</td>
+                <td>{{emp.location}}</td>
+                <td><app-rating [rating]="emp.proficiency"></app-rating></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

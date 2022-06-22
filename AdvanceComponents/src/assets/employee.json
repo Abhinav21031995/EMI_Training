@@ -1,0 +1,32 @@
+[
+    {
+    "employeeId":1,
+    "employeeName":"Ayesha",
+    "projectId":100,
+    "angularProficiency":4.0
+    },
+    {
+        "employeeId":2,
+        "employeeName":"Lukas",
+        "projectId":101,
+        "angularProficiency": 4.0
+    },
+    {
+        "employeeId":3,
+        "employeeName":"Tusani",
+        "projectId":102,
+        "angularProficiency": 3.5
+    },
+    {
+        "employeeId":4,
+        "employeeName":"Deeksha",
+        "projectId":103,
+        "angularProficiency": 3.5
+    },
+    {
+        "employeeId":5,
+        "employeeName":"Vaida",
+        "projectId":101,
+        "angularProficiency": 5.0
+    }
+]

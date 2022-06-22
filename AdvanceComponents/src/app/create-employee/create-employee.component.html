@@ -1,0 +1,10 @@
+<p>Add Employee Details</p>
+
+<label>Employee Id</label>
+<input type="text" name='id' [(ngModel)]="employee.empid">
+<label>Employee Name</label>
+<input type="text" name='name' [(ngModel)]="employee.name">
+<label>Employee location</label>
+<input type="text" name='location' [(ngModel)]="employee.location">
+
+<button type="button" (click)="AddEmployeeDetails()">Create Employee </button>

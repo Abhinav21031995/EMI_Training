@@ -1,0 +1,9 @@
+<ng-container *ngIf="employee.length">
+    <ul>
+        <li  *ngFor="let emp of employee; let i=index">
+            <h4>{{i+1}}</h4>
+            <p>{{emp.name}}</p>
+            <p>{{emp.location}}</p>
+        </li>
+    </ul>
+</ng-container>

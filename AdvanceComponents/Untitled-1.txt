@@ -1,0 +1,10 @@
+custom pipes
+ Sharing data between components
+ @input()=> parent to child
+ @output()=> child to parent
+
+ CreateEmployee => Create
+ Employee,ListEmployee
+
+ EmployeeListComponent => Angualr Proficiy=> 3, 4,5 => good,VeryGood,Excellnet
+

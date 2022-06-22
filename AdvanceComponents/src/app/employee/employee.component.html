@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Project ID</th>
+            <th>Angular Rating</th>
+        </thead>
+
+        <tr *ngFor="let emp of employee|paginate:{itemsPerPage:3,currentPage:p}">
+            <td>{{emp.employeeId}} </td>
+            <td>{{emp.employeeName}}</td>
+            <td>{{emp.projectId}}</td>
+             <!-- <td> {{emp.angularProficiency}}</td>  -->
+            <app-rating [rating]="emp.angularProficiency"></app-rating>
+           
+        </tr>
+    </table>
+
+    <div >
+        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+    </div>
+</div>

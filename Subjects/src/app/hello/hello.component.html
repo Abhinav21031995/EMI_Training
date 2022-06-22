@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header">
+        HelloComponent
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">User NAme is <span class="text-primary">{{empName}}</span></h5>
+        <input type="text" class="form-control" #empname><br/>
+        <button class="btn btn-primary" (click)="OnChange(empname)">Change Value</button>
+     
+    </div>

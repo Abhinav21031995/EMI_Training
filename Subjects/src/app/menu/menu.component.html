@@ -1,0 +1,16 @@
+<div>
+    <span style="color:teal"><strong>Observable Component</strong></span>
+    <strong style="color:black" class="badge badge-primary"
+    *ngIf="exclusiveComponent">Exclusive
+    </strong>
+
+    <div class="nav">
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" routerLink="hello">Hello </a>
+            <a class="nav-link active" routerLink="about">About </a>
+            <a class="nav-link active" routerLink="subject">Subject </a>
+            <a class="nav-link active" routerLink="replay">Replay </a>
+        </nav>
+    </div>
+
+    <router-outlet></router-outlet>

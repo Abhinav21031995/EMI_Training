@@ -1,0 +1,27 @@
+Angular Component LifeCycle
+
+constructor
+
+ngOnchanges() =>1 => parent/child => @input/@output => SimpleChanges
+currentValue,previousValue,FirstChange
+ngOninit()=>2 Component is initialized
+ngDoCheck()=>3=>
+ngAfterContentInit()=>4
+ngafterContentChecked()=>5
+ngAfterViewInit()=>6
+ngAfterViewChecked()=>7
+ngDestory=> Before Component Destroyed
+
+Child Component
+ngOninit
+ngDoCheck
+ngOnchanges
+ngAfterContentInit=>
+ngafterContentChecked
+ngAfterViewInit
+ngAfterViewChecked=> 
+
+Component
+ngOninit
+ngDoCheck
+

@@ -1,0 +1,29 @@
+Subject
+
+=> observer=> 
+=>Observable
+=>Subscriber=> netflix
+
+
+
+Observable=> Subscriber
+
+Subject=> subscribe()
+  next()
+  error()
+  complete()
+  Observers[]
+
+  Observer=> next()
+  error()
+  complete()
+  next()
+
+Subject=> subject c=new Subject()
+
+you tube => 10
+3
+BEhaviour Subject
+REplay Subject
+Async 
+ 

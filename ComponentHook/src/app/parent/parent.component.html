@@ -1,0 +1,16 @@
+<h3>Component LifeCycle Hooks</h3>
+<div>
+    <div>
+        <button types="button" (click)="increment()">Add Value</button><br/>
+        <br>
+        <button types="button" (click)="decrement()">Subtract Value</button><br/>
+        <button types="button" (click)="updateDetails()">Update Value</button>
+        <button type="button" (click)="hideShowChild()">Show/Hide Child Component</button>
+        <app-child *ngIf="showChild" [counterNewValue]="counter" [emp]="employee"></app-child>
+    </div>
+    
+</div>
+<h3>Parent Component</h3>
+Name:{{employee.name}}
+Location:{{employee.location}}
+Counter : {{counter}}

@@ -1,0 +1,16 @@
+
+.example-form{
+    text-align: center;
+    height: fit-content;
+   margin-top: 50px;
+
+}
+.center{
+    margin-top: 100px;
+    margin-left: 33%;
+    text-align: center;
+    padding:bold;
+}
+.example-form{
+    text-align: center;
+}

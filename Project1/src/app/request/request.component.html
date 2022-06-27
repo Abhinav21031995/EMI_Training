@@ -1,0 +1,49 @@
+<p>request works!</p>
+<p>
+    <mat-toolbar>
+      <span>ABC Corporation</span>
+    </mat-toolbar>
+  </p>
+
+  <p>
+    <mat-toolbar>
+     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span> User Name / Admin Name</span>
+    <span class="example-spacer"></span>
+    <nav class="nav justify-content-left">
+        <a class="nav-link active" routerLink="myrequest"> My Request </a>
+    </nav>
+    <nav class="nav justify-content-left">
+        <a class="nav-link active" routerLink="History">History </a>
+    </nav>
+    
+    
+  </mat-toolbar>
+  </p>
+  <div class="container">
+  <mat-form-field class="center" appearance="fill">
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="selected">
+     
+      <mat-option value="Dinner">Dinnner</mat-option>
+      <mat-option value="Lunch">Lunch</mat-option>
+      <mat-option value="Breakfast">Breakfast</mat-option>
+      <mat-option value="AnnualTrip">Annual Trip</mat-option>
+      <mat-option>Other</mat-option>
+    </mat-select>
+   
+  </mat-form-field>
+  <p >{{selected}}</p>
+</div>
+<div class="Box">
+<label for="textarea">Give in Description</label>
+<textarea  id="textarea" cols="50" rows="5" ></textarea>
+
+<button mat-raised-button color="primary" type="Submit">Login</button>
+</div>
+  <router-outlet></router-outlet>
+  
+ 
+ 

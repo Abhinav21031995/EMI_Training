@@ -1,0 +1,63 @@
+<form [formGroup="login" (ngSubmit)="login()" novalidate class="d-flex-center"> 
+<!-- <div class="text-center">
+    <h4 class="text-center"> Login form </h4>
+     <form [formGroup="loginForm" (ngSubmit)="onSubmit()" novalidate class="d-flex-center"> 
+      <div class="example-container">
+        <div>
+          <mat-form-field>
+            <input matInput type="email" placeholder="Email" formControlName="email">
+             <mat-error *ngIf="!loginForm.get('email')?.errors?.required && (loginForm.get('email')?.errors?.pattern)">
+              Please enter a valid email address
+            </mat-error> --> 
+            <!-- <mat-error *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)">
+              Email is required
+            </mat-error> -->
+          <!-- </mat-form-field>
+        </div>
+        <div class="mt-top-2">
+          <mat-form-field>
+            <input matInput type="password" placeholder="Password" formControlName="password">     -->
+            <!-- <mat-error *ngIf="!loginForm.get('password')?.errors?.required">
+              Password length must be greater than or equal to 8 and password must contain one or more uppercase , lowercase , numeric and special characters
+            </mat-error> -->
+            <!-- <mat-error *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+              Password is required
+            </mat-error> -->
+          <!-- </mat-form-field>
+        </div>
+        <div class="mt-top">
+          <button [disabled]="!loginForm.valid" mat-raised-button color="primary" mat-button>Login</button>
+        </div>
+      </div>
+    </form>
+  </div> --> 
+  <div class="text-center">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+              <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+      <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button  color="primary" (click)=" login()">Login</button>
+    </mat-card-actions>
+  </mat-card>
+</div> 
+<p>Login Works</p>
+  <router-outlet></router-outlet>

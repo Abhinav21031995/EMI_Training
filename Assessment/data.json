@@ -1,0 +1,19 @@
+{
+  "Books": [
+    {"Book": "Abhinav",
+      "Category": "Religious",
+      "Author": "SSP"
+      
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-
+base_Url="http://localhost:3000/Books"
   constructor(private http :HttpClient) { }
   postProduct(data:any){
     return this.http.post<any>("http://localhost:3000/Books/",data)

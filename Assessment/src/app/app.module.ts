@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-
+import {  AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './shared/login/login.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import {MatCardModule} from '@angular/material/card';
 import { AdminoperationComponent } from './adminoperation/adminoperation.component';
 import {MatTabsModule} from '@angular/material/tabs';
@@ -20,6 +19,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
 
   ],
   imports: [
-    BrowserModule,
+     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
@@ -39,9 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule ,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
+  
     MatCardModule,
-    AppRoutingModule,
+    
     MatTabsModule,
     MatDialogModule,
     MatButtonModule,

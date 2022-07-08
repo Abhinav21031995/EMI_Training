@@ -15,12 +15,20 @@ import {MatCardModule} from '@angular/material/card';
 import { RequestComponent } from './request/request.component';
 import {MatSelectModule} from '@angular/material/select';
 import {ClipboardModule} from '@angular/cdk/clipboard';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MyrequestComponent } from './myrequest/myrequest.component';
+import { HistoryComponent } from './history/history.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NavbarComponent,
     RequestComponent,
+    MyrequestComponent,
+    HistoryComponent,
 
   ],
   imports: [
@@ -34,7 +42,10 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     MatButtonModule,
     MatCardModule,
     MatSelectModule,
-    ClipboardModule
+    ClipboardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

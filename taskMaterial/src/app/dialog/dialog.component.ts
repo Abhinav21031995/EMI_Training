@@ -14,6 +14,7 @@ const year = today.getFullYear();
 
 
 export class DialogComponent implements OnInit {
+  console: any;
 
   campaignOne = new FormGroup({
     start: new FormControl(new Date(year, month, 13)),
@@ -27,6 +28,8 @@ export class DialogComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
+  
 
 }

@@ -1,16 +1,16 @@
-<p>request works!</p>
+
 <p>
-    <mat-toolbar>
+    <mat-toolbar color="primary">
       <span>ABC Corporation</span>
     </mat-toolbar>
   </p>
 
   <p>
-    <mat-toolbar>
+    <mat-toolbar color="accent">
      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span> User Name / Admin Name</span>
+    <span> User Name </span>
     <span class="example-spacer"></span>
     <nav class="nav justify-content-left">
         <a class="nav-link active" routerLink="myrequest"> My Request </a>
@@ -22,6 +22,8 @@
     
   </mat-toolbar>
   </p>
+  <mat-card class="example-card"  >
+
   <div class="container">
   <mat-form-field class="center" appearance="fill">
     <mat-label>Select an option</mat-label>
@@ -36,13 +38,46 @@
    
   </mat-form-field>
   <p >{{selected}}</p>
-</div>
-<div class="Box">
-<label for="textarea">Give in Description</label>
-<textarea  id="textarea" cols="50" rows="5" ></textarea>
 
-<button mat-raised-button color="primary" type="Submit">Login</button>
+<div class="Box" fxFlexAlign="center">
+
+<textarea placeholder="Give in Description" id="textarea" cols="50" rows="5" fxLayoutAlign=" center" ></textarea>
+<br>
+<button mat-raised-button color="primary" type="Submit">Submit</button>
 </div>
+<br>
+<div >
+<mat-form-field appearance="fill">
+  <mat-label>Amount</mat-label>
+  <input matInput>
+</mat-form-field><br>
+<mat-form-field appearance="fill">
+  <mat-label>Approve Authority</mat-label>
+  <mat-select>
+    <mat-option value="one">Senior Team Lead</mat-option>
+    <mat-option value="two">Manager</mat-option>
+    <mat-option value="three">country Manager</mat-option>
+  </mat-select>
+</mat-form-field><br>
+</div>
+<div>
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</div>
+<section class="example-section">
+  <mat-checkbox class="example-margin">Confirm</mat-checkbox><br><br>
+  
+</section>
+<button  mat-raised-button color="primary" style="margin:20px;" >Submit</button>
+<button mat-raised-button color="warn">Reset</button>
+
+</div>
+</mat-card>
   <router-outlet></router-outlet>
   
  

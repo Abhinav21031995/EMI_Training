@@ -2,14 +2,15 @@
 .example-form{
     text-align: center;
     height: fit-content;
-   margin-top: 50px;
+   margin-top: 100px;
 
 }
 .center{
-    margin-top: 100px;
+    margin-top: 250px;
     margin-left: 33%;
     text-align: center;
     padding:bold;
+    box-shadow: 10px 10px 10px 10px rgba(190, 25, 25, 0.4)
 }
 .example-form{
     text-align: center;

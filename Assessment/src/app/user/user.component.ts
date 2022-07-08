@@ -92,7 +92,6 @@ export class UserComponent implements OnInit {
     this.requestForm.controls['bookName'].setValue(data.bookName);
     this.requestForm.controls['category'].setValue(data.category);
     this.requestForm.controls['authorName'].setValue(data.authorName);
-   
     this.requestForm.controls['quantity'].setValue(data.quantity);
     this.sendRequest(this.count);
     this.count++;

@@ -8,12 +8,12 @@ import { LoginComponent } from './shared/login/login.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
 
+import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 
 import {MatTabsModule} from '@angular/material/tabs';
-import { DialogComponent } from './dialog/dialog.component';
+
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -27,6 +27,7 @@ import { AddbookComponent } from './admin/addbook/addbook.component';
 import { RequestComponent } from './admin/request/request.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { AdminComponent } from './admin/admin/admin.component';
 
 
 
@@ -35,8 +36,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     AppComponent,
     LoginComponent,
     NavbarComponent,
-  
-    DialogComponent,
+  RequestComponent,
+    AdminComponent,
     UserComponent,
     AddbookComponent,
 

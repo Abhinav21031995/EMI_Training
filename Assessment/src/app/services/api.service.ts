@@ -5,6 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+  requestProduct: any;
+  deleteBook(id: number) {
+    throw new Error('Method not implemented.');
+  }
 base_Url="http://localhost:3000/Books"
   constructor(private http :HttpClient) { }
   postProduct(data:any){
@@ -12,5 +16,22 @@ base_Url="http://localhost:3000/Books"
   }
   getProduct(data:any){
     return this.http.get<any>("http://localhost:3000/Books/")
+  }
+  putProduct(data:any,id:number){
+
+    return this.http.put<any>(" http://localhost:3000/Books/" +id,data)
+
+
+}
+
+  deleteProduct(id:number){
+
+    return this.http.delete<any>(" http://localhost:3000/Books/" +id);
+
+  }
+  getRequest(){
+
+    return this.http.get<any>(" http://localhost:3000/lists")
+
   }
 }

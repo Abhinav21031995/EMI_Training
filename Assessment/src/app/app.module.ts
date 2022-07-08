@@ -11,7 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
 
 import {MatCardModule} from '@angular/material/card';
-import { AdminoperationComponent } from './adminoperation/adminoperation.component';
+
 import {MatTabsModule} from '@angular/material/tabs';
 import { DialogComponent } from './dialog/dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -21,14 +21,24 @@ import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { UserComponent } from './user/user.component';
+import { ToastrModule } from 'ngx-toastr';
+import { AddbookComponent } from './admin/addbook/addbook.component';
+import { RequestComponent } from './admin/request/request.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    AdminoperationComponent,
+  
     DialogComponent,
+    UserComponent,
+    AddbookComponent,
 
   ],
   imports: [
@@ -41,15 +51,17 @@ import { BrowserModule } from '@angular/platform-browser';
     ReactiveFormsModule ,
     FormsModule,
     ReactiveFormsModule,
-  
+    ToastrModule.forRoot({timeOut
+    :1000}),
     MatCardModule,
-    
+    MatTableModule,
     MatTabsModule,
     MatDialogModule,
     MatButtonModule,
     MatInputModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

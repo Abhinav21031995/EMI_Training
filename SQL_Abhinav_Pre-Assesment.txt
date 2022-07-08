@@ -1,0 +1,5 @@
+b. select * from emp where name like '%le'and length(name)=4.
+c. select * from emp where name like 'A%'and length(name)=5.
+d. select distinct department from employee.
+e. select max(salary),min(salary) from employee.
+n.select name from employee where salary order by desc limit 1.

@@ -34,10 +34,10 @@ export class LoginComponent implements OnInit {
   onlogin() : void {
     if(this.email == 'user@gmail.com' && this.password == 'user1234'){
     //  this['router'].navigate(["user"]);
-    // this.router.navigate(["user"])
+     this.router.navigate(["user"])
     }else if (this.email=='admin@gmail.com' && this.password=='admin1234'){
       // this['router'].navigate(["admin"]);
-      // this.router.navigate(["admin"])
+       this.router.navigate(["admin"])
     }else{
       alert("Invalid credentials");
     }

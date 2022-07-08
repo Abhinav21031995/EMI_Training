@@ -1,12 +1,47 @@
 {
   "Books": [
     {
-      
-      "Book": "Abhinav",
+      "Book": "Alchemist",
+      "Category": "Scriptures",
+      "Author": "Paulo Coehlo"
+    },
+    {
+      "Book": "Next Level",
+      "Category": "Educational",
+      "Author": "John"
+    },
+    {
+      "Book": "Ramayan",
       "Category": "Religious",
-      "Author": "SSP"
-      
+      "Author": "Valmiki"
+    },
+    {
+      "Book": "Indian art and culture",
+      "Category": "Cultural",
+      "Author": "Nitin"
+    },
+    {
+      "Book": "Indian Polity",
+      "Category": "Educational",
+      "Author": "Laxmikant"
+    },
+    {
+      "Book": "Mahabharat",
+      "Category": "Religious",
+      "Author": "Ganesh"
+    },
+    {
+      "Book": "Marathi Culture",
+      "Category": "Cultural",
+      "Author": "Abhinav"
+    },
+    {
+      "Book": "Modi:the forgotton language",
+      "Category": "Scriptures",
+      "Author": "Akshay"
     }
+    
+
   ],
   "comments": [
     {

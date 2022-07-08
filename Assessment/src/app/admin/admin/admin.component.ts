@@ -16,7 +16,7 @@ export class AdminComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'bookName', 'category', 'authorName','quantity','action'];
   dataSource!: MatTableDataSource<any>;
-  actionbtn:string="List Of Books";
+  actionbtn:string="List ";
   no:any
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;

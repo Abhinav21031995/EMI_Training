@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
   requestProduct: any;
+  getRequest: any;
   deleteBook(id: number) {
     throw new Error('Method not implemented.');
   }
@@ -29,9 +30,5 @@ base_Url="http://localhost:3000/Books"
     return this.http.delete<any>(" http://localhost:3000/Books/" +id);
 
   }
-  getRequest(){
-
-    return this.http.get<any>(" http://localhost:3000/lists")
-
-  }
+  
 }

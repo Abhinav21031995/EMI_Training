@@ -43,8 +43,9 @@ export class AddbookComponent implements OnInit {
  }
 
  addition(){
+   
    if(!this.editBook){
-     if(this.bookForm.valid){
+    //  if(this.bookForm.valid){
        this.api.postBook(this.bookForm.value)
        .subscribe({
          next:(res: any)=>{
@@ -56,9 +57,9 @@ export class AddbookComponent implements OnInit {
            alert("Book is not added!")
          }
        })
-     }else{
-       this.updateBookdData()
-     }
+    //  }else{
+    //    this.updateBookdData()
+    //  }
    }
 
 

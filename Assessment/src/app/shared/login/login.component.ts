@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms'
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { AdminComponent } from 'src/app/admin/admin/admin.component';
 
 
@@ -15,35 +15,30 @@ export class LoginComponent implements OnInit {
 
   hide: boolean = false;
 
-  constructor(private fb: FormBuilder, private router:RouterModule) {
+  constructor(private fb: FormBuilder, private router:Router,private route:ActivatedRoute) {
   }
-  email:string | undefined;
-  password:string | undefined;
-//   onclick(){
-//    this['router'].navigate([`DialogComponent`])
-//  }
-  ngOnInit() {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-
-  loginForm: FormGroup = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', [Validators.required, Validators.minLength(6)]]
-  })
-
-
-  onlogin() : void {
-    if(this.email == 'user@gmail.com' && this.password == 'user1234'){
-    //  this['router'].navigate(["user"]);
-     this.router.navigate(["user"])
-    }else if (this.email=='admin@gmail.com' && this.password=='admin1234'){
-      // this['router'].navigate(["admin"]);
-       this.router.navigate(["admin"])
-    }else{
-      alert("Invalid credentials");
-    }
-
-     this['matdialog'].closeAll();
-    
-  }
-
-}
+  username:string | undefined;
+password:string | undefined;
+  login() : void {
+      if(this.username == 'user' && this.password == 'user'){
+       this.router.navigate(["user"]);
+       this['toast'].success({detail:"login success", summary:"welcome user!!",duration:5000});
+      }else if (this.username=='admin' && this.password=='admin'){
+        this.router.navigate(["admin"]);
+        this['toast'].success({detail:"login success", summary:"welcome admin",duration:5000});
+      }else{
+        // alert("Invalid credentials");
+        // alert("Invalid credentials");
+        this['toast'].error({detail:"Invalid credential", summary:"username or password incorrect!",duration:5000});
+        
+      }
+  
+      this['matdialog'].closeAll();
+      
+    }
+    }
+  
+  

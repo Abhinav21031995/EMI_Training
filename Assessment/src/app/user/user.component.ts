@@ -47,11 +47,14 @@ export class UserComponent implements OnInit {
 
 
   getAllBooks(){
-    this.api.getProduct({
-      next:(res:any)=>{
+
+    this.api.getProduct().subscribe({
+         next:(res:any)=>{
         this.dataSource=new MatTableDataSource(res);
         this.dataSource.paginator=this.paginator;
-        this.dataSource.sort=this.sort;
+        this.dataSource.sort=this.sort
+        console.log(res.length);
+   
       },
       error:(err:any)=>{
         alert("Error while fetching the data")

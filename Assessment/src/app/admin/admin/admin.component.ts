@@ -49,13 +49,11 @@ export class AdminComponent implements OnInit {
   getAllBooks(){
 
     this.api.getProduct().subscribe({
-   
-
-      next:(res:any)=>{
-        // this.dataSource=new MatTableDataSource(res);
-        // this.dataSource.paginator=this.paginator;
-        // this.dataSource.sort=this.sort
-        // console.log(res.length);
+         next:(res:any)=>{
+        this.dataSource=new MatTableDataSource(res);
+        this.dataSource.paginator=this.paginator;
+        this.dataSource.sort=this.sort
+        console.log(res.length);
    
       },
       error:(err:any)=>{
@@ -84,8 +82,8 @@ export class AdminComponent implements OnInit {
     })
   }
 
-  deleteBook(id:number){
-    this.api.deleteBook.subscribe({
+  deleteProduct(id:number){
+    this.api.deleteProduct(id).subscribe({
       next:(res:any)=>{
         alert("Book deleted Successfully")
         this.getAllBooks();

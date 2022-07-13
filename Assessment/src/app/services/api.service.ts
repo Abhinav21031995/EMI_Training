@@ -15,12 +15,17 @@ base_Url="http://localhost:3000/Books"
   postProduct(data:any){
     return this.http.post<any>("http://localhost:3000/Books/",data)
   }
-  getProduct(data:any){
+  getProduct(){
     return this.http.get<any>("http://localhost:3000/Books/")
   }
   putProduct(data:any,id:number){
 
     return this.http.put<any>(" http://localhost:3000/Books/" +id,data)
+
+
+}
+
+postBook(data:any,id:number){ return this.http.put<any>(" http://localhost:3000/Books/" ,data)
 
 
 }

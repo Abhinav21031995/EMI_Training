@@ -1,0 +1,26 @@
+
+<mat-toolbar color="primary">
+    <button mat-icon-button
+      class="example-icon" 
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>ABC corporation</span>
+    <span class="example-spacer"></span>
+
+    <button mat-raised-button color="accent" (click)="history()">
+      History
+    </button>&nbsp;
+
+    <button mat-raised-button color="accent" (click)="myrequest()">
+      NewRequest
+    </button>&nbsp;
+    <span>Username</span>&nbsp;
+    <mat-icon>person_add</mat-icon>
+
+</mat-toolbar>
+<br>
+
+
+
+<app-reqpage></app-reqpage>

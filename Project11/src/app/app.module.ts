@@ -12,18 +12,21 @@ import { RegisterComponent } from './components/register/register.component';
 import { ToastrModule } from 'ngx-toastr';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
-import { RequestComponent } from './modules/user/navreq/request.component';
+import { RequestComponent } from './modules/user/request/request.component';
 import { ApprovalComponent } from './modules/admin/approval/approval.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MyrequestComponent } from './modules/user/myrequest/myrequest.component';
 import { HistoryComponent } from './modules/user/history/history.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { ReqpageComponent } from './modules/user/reqpage/reqpage.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-
+import { MatDatepickerModule} from '@angular/material/datepicker';
+import { MatTableModule} from '@angular/material/table';
+import { MatNativeDateModule } from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     ReqpageComponent,
   ],
   imports: [
-    BrowserModule,MatDatepickerModule,
+    BrowserModule,
     AppRoutingModule,
     MatAutocompleteModule,
     BrowserAnimationsModule,
@@ -51,6 +54,15 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatIconModule,
     MatDialogModule,
     ToastrModule.forRoot(),
+    MatDatepickerModule,
+    MatTableModule,
+    MatCardModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent],

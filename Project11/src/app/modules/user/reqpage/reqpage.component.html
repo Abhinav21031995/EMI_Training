@@ -1,79 +1,57 @@
-
- <!-- <mat-card class="card">
-    <mat-card-title>Request </mat-card-title>
-    <mat-card-subtitle>Start</mat-card-subtitle>
-    
-     
-          <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Reason</mat-label>
-          <input matInput placeholder="Reason" value="Dinner">
-        </mat-form-field>
-      <br>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Description</mat-label>
-          <textarea matInput placeholder="Describe Here!"></textarea>
-        </mat-form-field>
-     
-       <br>
-  <mat-form-field class="demo-full-width" appearance="fill">
-    <mat-label>Authority</mat-label>
-    <select  >
-      <option value=""></option>
-      <option value="valid" selected>Manager</option>
-      <option value="invalid">Country Manager</option>
-    </select>
-   </mat-form-field>
-       <br>
-    
-  <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card> -->
-  <mat-card class="card">
-    <mat-card-title>New Request</mat-card-title>
+<mat-card class="card">
+    <mat-card-title style=color:chocolate>New Request</mat-card-title>
     <mat-card-subtitle>Start</mat-card-subtitle>
 
-  <form class="example-form">
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label></mat-label>
-      <input matInput disabled value="Request Here!">
-    </mat-form-field>
-  <tr>
-      <td><mat-form-field class="example-full-width" appearance="fill">
+  <form [formGroup]='DetailForm'>
+    
+      <mat-form-field class="example-full-width1" appearance="fill">
         <mat-label>Reason</mat-label>
-        <input matInput placeholder="Reason" value="Dinner">
-      </mat-form-field></td>
-      <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label></mat-label>
-        <textarea matInput  placeholder="Describe Here!"></textarea>
-      </mat-form-field></tr>
+        <mat-card-content style="color: darkred;">Reason:</mat-card-content>
+        <input formControlName="Reason" matInput placeholder="Reason" value="Dinner" class="Reason">
+      </mat-form-field>
+       <br>
 
-      <td><mat-form-field class="example-full-width" appearance="fill">
-        <mat-label></mat-label>
-        <input matInput disabled value="Approving Authority : Finance Deaprtment">
-      </mat-form-field></td>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Description</mat-label>
+        <mat-card-content style="color: darkred;">Description:</mat-card-content>
+        <textarea matInput formControlName="Description" placeholder="Describe Here!" class="Desc"></textarea>
+      </mat-form-field>
+       
       <br>
- 
-  
-    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Approval</mat-label>
+        <input   matInput disabled value="Approving Authority : Finance Deaprtment" class="Approve">
+      </mat-form-field>
+      
+      <br>
+    
+      <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Number</mat-label>
-        <input matInput #Amount maxlength="5" placeholder="#Amount" value="00000">
+        <mat-card-content style="color: darkred;">$Amount$:</mat-card-content>
+        <input matInput formControlName="Amount" matInput type="number" #Amount maxlength="5" placeholder="#Amount" value="00000" class="Value">
         <mat-hint align="end">{{Amount.value.length}} / 5</mat-hint>
       </mat-form-field>
-    </td>
-<!--   
-    <mat-form-field appearance="fill">
-        <mat-label>Choose a date</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
+      
+      <br>
+      <mat-form-field appearance="fill" >
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [rangePicker]="picker" class="date" >
+          <input matStartDate placeholder="Start date">
+          <input matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field> -->
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
       
   </form>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
+  
+  <mat-card >
+  <button style="margin-left:45px" mat-raised-button color="primary" (click)="Submit()" >
+    Submit
+  </button>&nbsp;
+  <button style="margin-left:30px"mat-raised-button color="accent" (click)="Reset()">
+    Reset
+  </button>&nbsp;
+   </mat-card>
 </mat-card>

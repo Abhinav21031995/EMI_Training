@@ -6,7 +6,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { ApprovalComponent } from './modules/admin/approval/approval.component';
 import { HistoryComponent } from './modules/user/history/history.component';
 import { MyrequestComponent } from './modules/user/myrequest/myrequest.component';
-import { RequestComponent } from './modules/user/navreq/request.component';
+import { RequestComponent } from './modules/user/request/request.component';
+import { ReqpageComponent } from './modules/user/reqpage/reqpage.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'request',component:RequestComponent},
   {path:'approval',component:ApprovalComponent},
   {path:'register',component:RegisterComponent},
+  {path:'reqpage',component:ReqpageComponent},
 ];
 
 @NgModule({

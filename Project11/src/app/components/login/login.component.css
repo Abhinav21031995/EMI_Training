@@ -1,4 +1,4 @@
-.example-container .mat-form-field + .mat-form-field {
+/* .example-container .mat-form-field + .mat-form-field {
     margin-left: 8px;
   }
 
@@ -18,4 +18,32 @@
 
   a:hover{
     color: red;
+  } */
+  .example-form {
+    min-width: 150px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .login
+  {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+   margin: 10px 0px 20px 0px;
+  }
+
+  .close_btn{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+  }
+  .title{
+    text-align: center ;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0px 0px 20px 0px;
   }

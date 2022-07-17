@@ -1,24 +1,28 @@
-/* :host {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  } */
-  card{
-     margin-left: 50%;
-     margin-top: 10%;
-    
-  } 
-  .example-form {
-   
-    min-width: 25%;
-    max-width: 100%;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
-  
-  td {
-    padding-right: 8px;
-  }
+.card{
+  text-align: center;
+}
+.Reason{
+  margin-left: 0px;
+  width:400px ;
+  height: 30px;
+}
+.Desc{
+  margin-left: 0px;
+  width:400px ;
+  height: 70px;
+}
+.Approve{
+  margin-left: 0px;
+  width:400px ;
+  height: 50px;
+}
+.Value{
+  margin-left: 0px;
+  width:400px ;
+  height: 35px;
+}
+.date{
+
+}
+
+

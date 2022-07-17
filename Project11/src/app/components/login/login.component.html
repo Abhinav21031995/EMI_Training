@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<!-- <mat-card class="example-card">
     <mat-card-header>
       <mat-card-title>Login</mat-card-title>
     </mat-card-header>
@@ -18,10 +18,41 @@
             </mat-form-field></td>
                 </tr>
             </table>
-        <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
-        </mat-card-content>
+         <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
+        <!-- </mat-card-content>
         <mat-card-actions>
-            <button mat-raised-button type="submit" color="primary">Login</button>
+            <button mat-raised-button type="submit" color="primary" mat-dialog-close="Login">Login</button>
             <a style="margin-left: 10px" routerLink="">forgot password?</a>
         </mat-card-actions>
-    </form>
+    </form> --> -->
+    <div style="width: 350px;">
+        <div mat-dialog-title>
+          <div class="close_btn">
+            <button mat-icon-button mat-dialog-close>
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+          <h1 class="title">Login</h1>
+        </div>
+        
+        <form  #myForm="ngForm" autocomplete="off" (ngSubmit)="onSubmit(myForm)">
+          <mat-dialog-content>
+          <!-- <div class="example-full-width"> -->
+            <div class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>&nbsp;
+            <input class="example-full-width" type="firstName" name="firstName" id="floatingInput" placeholder="Email address" required="" ngModel>
+            </div>&nbsp;
+            
+          <div class="example-full-width" appearance="fill">
+            <mat-label>Password</mat-label>&nbsp;
+            <input class="example-full-width" type="password" name="password"  id="floatingPassword" placeholder="*********" required="" ngModel>
+          </div>
+          <br>
+        
+          <button mat-raised-button color="primary"  type="submit">Sign In</button>
+        <br>
+          <small>Do not have an account?</small>
+          <a class="text-darkyellow" href="#"><small>Sign Up</small></a>
+        </mat-dialog-content>
+        </form>
+        </div>

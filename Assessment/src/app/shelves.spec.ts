@@ -1,2 +1,0 @@
-import { Shelves } from './shelves';
-

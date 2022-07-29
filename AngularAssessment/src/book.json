@@ -1,0 +1,94 @@
+{
+  "Authentication": [
+    {
+      "id": 1,
+      "userName": "user",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "userName": "admin",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+  "booklist": [
+    {
+      "bookName": "Harry Potter",
+      "category": "story",
+      "authorName": "harry",
+      "discription": "movie story",
+      "quantity": 3,
+      "id": 4
+    },
+    {
+      "bookName": "marathi part1",
+      "category": "story",
+      "authorName": "abhinav",
+      "discription": "i love",
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "bookName": "abhinav Jayant Joshi",
+      "category": "general",
+      "authorName": "fvertgrtww",
+      "discription": "dfvbrt",
+      "quantity": 4,
+      "id": 6
+    }
+  ],
+  "requestlist": [
+    {
+      "id": 4,
+      "bookName": "Harry Potter",
+      "category": "story",
+      "authorName": "harry",
+      "discription": "movie story",
+      "quantity": 3
+    },
+    {
+      "id": 5,
+      "bookName": "marathi part1",
+      "category": "story",
+      "authorName": "abhinav",
+      "discription": "i love",
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "bookName": "abhinav Jayant Joshi",
+      "category": "general",
+      "authorName": "fvertgrtww",
+      "discription": "dfvbrt",
+      "quantity": 4
+    }
+  ],
+  "issuedBooks": [
+    {
+      "bookName": "harry potter",
+      "category": "story",
+      "authorName": "harry",
+      "id": 1
+    },
+    {
+      "bookName": "harry potter",
+      "category": "story",
+      "authorName": "harry",
+      "id": 2
+    },
+    {
+      "bookName": "Ramayana",
+      "category": "general",
+      "authorName": "History",
+      "id": 3
+    },
+    {
+      "bookName": "Harry Potter",
+      "category": "story",
+      "authorName": "harry",
+      "id": 4
+    }
+  ]
+}

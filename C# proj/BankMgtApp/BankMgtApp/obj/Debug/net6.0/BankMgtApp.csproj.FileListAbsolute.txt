@@ -1,0 +1,15 @@
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\bin\Debug\net6.0\BankMgtApp.exe
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\bin\Debug\net6.0\BankMgtApp.deps.json
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\bin\Debug\net6.0\BankMgtApp.runtimeconfig.json
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\bin\Debug\net6.0\BankMgtApp.dll
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\bin\Debug\net6.0\BankMgtApp.pdb
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.csproj.AssemblyReference.cache
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.AssemblyInfoInputs.cache
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.AssemblyInfo.cs
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.csproj.CoreCompileInputs.cache
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.dll
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\refint\BankMgtApp.dll
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.pdb
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\BankMgtApp.genruntimeconfig.cache
+C:\Users\abhinav.joshi\OneDrive - Euromonitor International\EMI_Training\C# proj\BankMgtApp\BankMgtApp\obj\Debug\net6.0\ref\BankMgtApp.dll
